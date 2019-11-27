@@ -1,0 +1,82 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[left=1in,right=1in,top=1.25in,bottom=1in]{geometry}
+\usepackage{amssymb}
+\setcounter{tocdepth}{3}
+\usepackage{graphicx}
+%\usepackage{tipa}
+%\usepackage{url}
+\usepackage{hyperref}
+\usepackage{cite}
+%\usepackage{balance}
+\linespread{1.5}
+
+\begin{document}
+\thispagestyle{empty}
+\makeatletter
+\setlength\@fptop{0pt}
+\setlength\@fpsep{20pt plus 2pt minus 2pt}
+\setlength\@fpbot{0pt}
+\makeatother
+
+\begin{table}[t]
+\begin{tabular}{l}
+
+\centerline {\Huge {\textbf{Title Line 1}}} \\
+\\
+\centerline{\Huge {$\hspace{0.14cm}$\textbf{Title Line 2}}} % if no 2nd line title comment this line
+
+\end{tabular}
+\end{table}
+
+
+\begin{table}[b]
+\begin{tabular}{l}
+{\LARGE{\bf Write Your Name Here}}\\
+{\Large{{\bf Roll No:} Write Your Roll Number Here}}\\
+{\Large{{\bf Email id:} \href{mailto:mymail@iit.ac.in}{me@example.com}}}\\
+\\
+\\
+\\
+\\
+\\
+{\large {\bf Department of Computer Science and Engineering}}\\
+{\large {\bf Indian Institute of Technology Patna}}\\
+{\large {\bf Bihta, Patna-801106, India}}\\
+\end{tabular}
+\end{table}
+\clearpage
+
+\pagenumbering{arabic}
+
+
+\begin{abstract}
+This is $\frac{1}{2}$ page abstract to summarize the work.
+
+\clearpage
+\end{abstract}
+
+\section{Introduction}\label{sec:abc}
+The introduction emphasizing the importance of issue is stated in this section. \cite{Ref1}. 
+
+\section{Existing Works}\label{sec:def}
+The proposals are explained throughly in this section \cite{Ref2}.
+
+\section{Discussion}\label{sec:ghi}
+Results of the work are analyzed here. Advantages and limitation of the work is also highlighted in this section.
+
+\section{Conclusion}\label{sec:jkl}
+The concluding remark is presented here.
+
+\bibliographystyle{unsrt}
+\begin{thebibliography}{9}
+\bibitem{Ref1} Y. Linde, A. Buzo and R.M. Gray, \textquotedblleft An algorithm for vector quantizer design \textquotedblright, IEEE Transactions on Communications, vol. 28, pp. 84-95, January 1980.
+
+\bibitem{Ref2} W. Chen, C. Paris, \textquotedblleft A two-expert approach
+to file access prediction ",  in Proc. 3rd Int. Inf. Telecommun. Technol.
+Symp., Sao Carlos, SP, Brazil, Dec. 2004, pp. 139-145.
+
+
+
+\end{thebibliography}
+
+\end{document}
